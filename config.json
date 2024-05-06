@@ -1,0 +1,55 @@
+{
+    "sources":[
+        {
+            "name":"Wordpress plugin",
+            "class":"sources.wordpress_plugin.WordpressPluginSource",
+            "config": {
+                "relative_path": "wp-content/plugins"
+            }
+        },
+        {
+            "name":"WPBakery Download",
+            "class":"sources.local_files.LocalFilesSource",
+            "config": {
+                "relative_path": "wp-content/plugins/js_composer",
+                "reference_path": "c:\\temp\\js_composer",
+                "source_type": "Vendor Source",
+                "source_additional": "wpbakery.com"
+            }
+        },
+        {
+            "name":"Wordpress core",
+            "class":"sources.wordpress_core.WordpressCoreSource",
+            "config": {
+            }
+        },
+        {
+            "name":"contact-form-7",
+            "class":"sources.git_repo.GitHubRepoSource",
+            "config": {
+                "relative_path": "wp-content/plugins/contact-form-7",
+                "git_url":  "https://github.com/rocklobster-in/contact-form-7/"
+            },
+            "enabled": false
+        },
+        {
+            "name":"wordpress-seo",
+            "description":"WordPress SEO by Yoast",
+            "class":"sources.git_repo.GitHubRepoSource",
+            "config": {
+                "relative_path": "wp-content/plugins/wordpress-seo",
+                "git_url":  "https://github.com/Yoast/wordpress-seo/"
+            },
+            "enabled": false
+        },
+        {
+            "name":"wp-carousel-free",
+            "class":"sources.git_repo.GitHubRepoSource",
+            "config": {
+                "relative_path": "wp-content/plugins/wp-carousel-free",
+                "git_url": "https://github.com/WPPlugins/wp-carousel-free"
+            },
+            "enabled": false
+        }
+    ]
+}
